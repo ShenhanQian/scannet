@@ -14,7 +14,7 @@ sudo apt install assimp-utils
 python ply2glb.py --root_folder $STORAGE_USER/data/scannet/scans/ --output_folder $STORAGE_USER/data/scannet_glb
 ```
 > [!NOTE]
-> The convertion fails on the following scenes for uncaptured reasons:
+> The conversion fails on the following scenes for uncaptured reasons:
 > - scene0020_01
 > - scene0051_03
 > - scene0077_00
@@ -22,3 +22,11 @@ python ply2glb.py --root_folder $STORAGE_USER/data/scannet/scans/ --output_folde
 > - scene0588_00
 > - scene0619_00
 > - scene0627_00
+
+
+## Extract .SENS files
+
+### Usage
+```shell
+python extract_sens.py --scannet_dir $STORAGE_USER/data/scannet/
+```
